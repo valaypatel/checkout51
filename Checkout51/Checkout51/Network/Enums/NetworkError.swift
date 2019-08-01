@@ -7,6 +7,9 @@
 //
 
 enum NetworkError {
+    case network
+    case server
     case unknown
+    case parsingError
     case noJSONData
 }

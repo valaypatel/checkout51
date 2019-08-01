@@ -10,13 +10,14 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
     
+    @IBOutlet weak var offerTable:UITableView!
     
     var indicator = UIActivityIndicatorView()
     var offerBatch = OfferBatch.init()
-    @IBOutlet weak var offerTable:UITableView!
+    private let sessionProvider = URLSessionProvider()
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return offerBatch.offers.count
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -28,7 +29,7 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     }
     
 
-    private let sessionProvider = URLSessionProvider()
+    
     
     
     override func viewDidLoad() {
