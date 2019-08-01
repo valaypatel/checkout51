@@ -28,19 +28,22 @@ class URLSessionProviderTest: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         stub(everything, http(500))
-        sessionProvider.request(type: OfferBatch.self, service: OfferBatchService.batchOffers) { response in
-            switch response {
-            case .success(_):
-                XCTFail()
+        self.measure {
+            sessionProvider.request(type: OfferBatch.self, service: OfferBatchService.batchOffers) { response in
+                switch response {
+                case .success(_):
+                    XCTFail()
+                    
+                case let .failure(error):
+                    XCTAssertEqual(error,NetworkError.server)
+                    
+                    
+                }
                 
-            case let .failure(error):
-                XCTAssertEqual(error,NetworkError.server)
-                
-                
+                expectation.fulfill()
             }
-            
-            expectation.fulfill()
         }
+        
         self.waitForExpectations(timeout: 5, handler: {(error:Error?) in
             XCTAssert((error == nil), error?.localizedDescription ?? "Failed with unknown error")
         })
