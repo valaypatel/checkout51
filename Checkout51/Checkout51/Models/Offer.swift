@@ -8,9 +8,14 @@
 
 import Foundation
 
-struct Offer: Codable {
+struct Offer: Codable,Equatable {
     let offer_id: String
     let name: String
     let cash_back: Double
     let image_url: String
+}
+
+
+func ==(lhs: Offer, rhs: Offer) -> Bool {
+    return lhs.name == rhs.name && lhs.cash_back == rhs.cash_back
 }

@@ -16,9 +16,10 @@ class OfferTableViewCell: UITableViewCell {
     
     @IBOutlet weak var offerValue: UILabel!
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

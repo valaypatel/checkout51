@@ -9,12 +9,6 @@
 import Foundation
 
 struct OfferBatch: Codable {
-    
-    init() {
-        offers = [Offer]()
-        batch_id = 0
-    }
-    
     let batch_id: Int
     let offers: [Offer]
 }

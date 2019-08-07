@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Chekout51-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Checkout51" customModuleProvider="target" sceneMemberID="viewController">
@@ -36,7 +36,7 @@
                                                         <constraint firstAttribute="width" constant="128" id="UC4-b4-Sb6"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OfferDetal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sna-Li-dqV">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OfferDetail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sna-Li-dqV">
                                                     <rect key="frame" x="136" y="11" width="224" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -82,7 +82,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="sgc-mJ-toP"/>
+                    <navigationItem key="navigationItem" title="Chekout51" id="sgc-mJ-toP">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="sort" style="plain" id="Pq8-Op-vVy">
+                            <connections>
+                                <action selector="showPopoverButtonAction:" destination="BYZ-38-t0r" id="bIF-Pd-haj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="offerTable" destination="CoQ-d5-eJC" id="gc8-fE-11v"/>
                     </connections>
@@ -90,6 +96,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="476" y="114.69265367316342"/>
+        </scene>
+        <!--Sort Popup Over View Controller-->
+        <scene sceneID="5L0-el-ciV">
+            <objects>
+                <viewController storyboardIdentifier="SortPopupOverViewController" id="oC8-di-pNf" customClass="SortPopupOverViewController" customModule="Checkout51" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="spM-f0-fsO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ez9-td-aBj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="oC8-di-pNf" id="QTv-sc-ecA"/>
+                                    <outlet property="delegate" destination="oC8-di-pNf" id="aUn-Wh-e3V"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="bpd-E9-2Qf"/>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="200" height="150"/>
+                    <size key="freeformSize" width="375" height="150"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8l2-Eu-3PR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1269.5999999999999" y="114.69265367316342"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oh7-mp-Yr3">
@@ -112,5 +146,6 @@
     </scenes>
     <resources>
         <image name="CashBack" width="120" height="120"/>
+        <image name="sort" width="30" height="30"/>
     </resources>
 </document>
