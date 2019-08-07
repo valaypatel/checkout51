@@ -35,17 +35,17 @@ class OffersManager {
     }
     
     func sortOffers(sortBy:SortBy) -> [Offer]{
-        guard let offers = self.offers else {
+        guard var offers = self.offers else {
             return [Offer]()
         }
         self.sortBy = sortBy
         switch sortBy {
         case .name:
-            self.offers = offers.sorted{$0.name < $1.name}
+            offers = offers.sorted{$0.name < $1.name}
         case .valueASC:
-            self.offers = offers.sorted{$0.cash_back < $1.cash_back}
+            offers = offers.sorted{$0.cash_back < $1.cash_back}
         case .valueDESC:
-            self.offers = offers.sorted{$0.cash_back > $1.cash_back}
+            offers = offers.sorted{$0.cash_back > $1.cash_back}
         }
         return offers
     }
