@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Chekout51-->
+        <!--Chekout51 Cashback-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Checkout51" customModuleProvider="target" sceneMemberID="viewController">
@@ -36,14 +36,14 @@
                                                         <constraint firstAttribute="width" constant="128" id="UC4-b4-Sb6"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OfferDetail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sna-Li-dqV">
-                                                    <rect key="frame" x="136" y="11" width="224" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="OfferDetail" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sna-Li-dqV">
+                                                    <rect key="frame" x="136" y="65" width="224" height="38"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vym-Iz-Apv">
-                                                    <rect key="frame" x="272" y="63.5" width="88" height="46"/>
+                                                    <rect key="frame" x="272" y="11" width="88" height="46"/>
                                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="38"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -56,8 +56,8 @@
                                                 <constraint firstAttribute="trailing" secondItem="Sna-Li-dqV" secondAttribute="trailing" constant="15" id="QJB-QY-kjC"/>
                                                 <constraint firstItem="vym-Iz-Apv" firstAttribute="trailing" secondItem="Sna-Li-dqV" secondAttribute="trailing" id="lqT-eh-xOQ"/>
                                                 <constraint firstItem="02U-wD-yPl" firstAttribute="top" secondItem="dYD-Gq-frf" secondAttribute="top" id="mBN-Em-CmG"/>
-                                                <constraint firstItem="Sna-Li-dqV" firstAttribute="top" secondItem="dYD-Gq-frf" secondAttribute="top" constant="11" id="qcY-BM-vm3"/>
-                                                <constraint firstItem="vym-Iz-Apv" firstAttribute="bottom" secondItem="dYD-Gq-frf" secondAttribute="bottomMargin" id="ubE-NH-vgk"/>
+                                                <constraint firstItem="Sna-Li-dqV" firstAttribute="top" secondItem="dYD-Gq-frf" secondAttribute="top" constant="65" id="qcY-BM-vm3"/>
+                                                <constraint firstItem="vym-Iz-Apv" firstAttribute="bottom" secondItem="dYD-Gq-frf" secondAttribute="bottomMargin" constant="-52" id="ubE-NH-vgk"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -82,7 +82,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Chekout51" id="sgc-mJ-toP">
+                    <navigationItem key="navigationItem" title="Chekout51 Cashback" id="sgc-mJ-toP">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="sort" style="plain" id="Pq8-Op-vVy">
                             <connections>
                                 <action selector="showPopoverButtonAction:" destination="BYZ-38-t0r" id="bIF-Pd-haj"/>

@@ -6,10 +6,10 @@
 //  Copyright © 2018 CocoApps. All rights reserved.
 //
 
-enum NetworkError {
-    case network
-    case server
-    case unknown
-    case parsingError
-    case noJSONData
+enum NetworkError:String {
+    case network = "Network Error"
+    case server = "Server Error"
+    case unknown = "Somthing is wrong!"
+    case parsingError = "Wrong data fetched"
+    case noJSONData = "No Data"
 }

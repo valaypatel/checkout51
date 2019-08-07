@@ -1,9 +1,13 @@
 //
-//  File.swift
+//  UIImageViewExtention
 //  Checkout51
 //
 //  Created by Patel, Valay on 2019-08-07.
 //  Copyright © 2019 FirstAim. All rights reserved.
+//
+//
+//  This extention helps to fetch images to UIImageView also cache is in place
+//
 //
 
 import Foundation
