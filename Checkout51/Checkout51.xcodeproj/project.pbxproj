@@ -24,6 +24,27 @@
 		2B76779422FB4FE80085741C /* SortEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B76779122FB4FE80085741C /* SortEnum.swift */; };
 		2B76779622FB520A0085741C /* OffersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B76779522FB520A0085741C /* OffersManager.swift */; };
 		2B76779722FB520A0085741C /* OffersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B76779522FB520A0085741C /* OffersManager.swift */; };
+		2B76779922FB7BC50085741C /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B76777F22FB34870085741C /* NetworkResponse.swift */; };
+		2B76779A22FB7BC50085741C /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B76777F22FB34870085741C /* NetworkResponse.swift */; };
+		2B76779B22FB7BD10085741C /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B76777D22FB34870085741C /* HTTPMethod.swift */; };
+		2B76779C22FB7BD20085741C /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B76777D22FB34870085741C /* HTTPMethod.swift */; };
+		2B76779D22FB7BD40085741C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B76777E22FB34870085741C /* NetworkError.swift */; };
+		2B76779E22FB7BD50085741C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B76777E22FB34870085741C /* NetworkError.swift */; };
+		2B76779F22FB7BD70085741C /* ParametersEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B76778022FB34870085741C /* ParametersEncoding.swift */; };
+		2B7677A022FB7BD80085741C /* ParametersEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B76778022FB34870085741C /* ParametersEncoding.swift */; };
+		2B7677A122FB7BDA0085741C /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B76778122FB34870085741C /* Task.swift */; };
+		2B7677A222FB7BDB0085741C /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B76778122FB34870085741C /* Task.swift */; };
+		2B7677A322FB7C100085741C /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7ABABC22F1F98100FA8AD6 /* Offer.swift */; };
+		2B7677A422FB7C130085741C /* OfferBatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7ABABD22F1F98100FA8AD6 /* OfferBatch.swift */; };
+		2B7677A522FB7C270085741C /* OffersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B76779522FB520A0085741C /* OffersManager.swift */; };
+		2B7677A622FB7C350085741C /* URLSessionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7ABAAD22F1F86400FA8AD6 /* URLSessionProvider.swift */; };
+		2B7677A722FB7C540085741C /* OfferBatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7ABAB122F1F86D00FA8AD6 /* OfferBatchService.swift */; };
+		2B7677A822FB7C650085741C /* URLComponentsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7ABAB522F1F8BA00FA8AD6 /* URLComponentsExtension.swift */; };
+		2B7677A922FB7C680085741C /* URLRequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7ABAB622F1F8BA00FA8AD6 /* URLRequestExtension.swift */; };
+		2B7677AA22FB7C6A0085741C /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B76778722FB36110085741C /* UIImageViewExtension.swift */; };
+		2B7677AB22FB7C6F0085741C /* ProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7ABAA322F1F85300FA8AD6 /* ProviderProtocol.swift */; };
+		2B7677AC22FB7C700085741C /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7ABAA422F1F85300FA8AD6 /* ServiceProtocol.swift */; };
+		2B7677AD22FB7C730085741C /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7ABAA522F1F85300FA8AD6 /* URLSessionProtocol.swift */; };
 		2B7ABAA622F1F85300FA8AD6 /* ProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7ABAA322F1F85300FA8AD6 /* ProviderProtocol.swift */; };
 		2B7ABAA722F1F85300FA8AD6 /* ProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7ABAA322F1F85300FA8AD6 /* ProviderProtocol.swift */; };
 		2B7ABAA822F1F85300FA8AD6 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7ABAA422F1F85300FA8AD6 /* ServiceProtocol.swift */; };
@@ -567,19 +588,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B76779B22FB7BD10085741C /* HTTPMethod.swift in Sources */,
 				2B76778F22FB45290085741C /* ViewController.swift in Sources */,
 				2B7ABACA22F26A5B00FA8AD6 /* Checkout51Tests.swift in Sources */,
 				2B7ABAAB22F1F85300FA8AD6 /* URLSessionProtocol.swift in Sources */,
+				2B7677A122FB7BDA0085741C /* Task.swift in Sources */,
 				2B7ABAAF22F1F86400FA8AD6 /* URLSessionProvider.swift in Sources */,
 				2B7ABABF22F1F98100FA8AD6 /* Offer.swift in Sources */,
+				2B76779922FB7BC50085741C /* NetworkResponse.swift in Sources */,
 				2B7ABAC822F237E400FA8AD6 /* URLSessionProviderTest.swift in Sources */,
 				2B76779322FB4FE80085741C /* SortEnum.swift in Sources */,
+				2B76779D22FB7BD40085741C /* NetworkError.swift in Sources */,
 				2B7ABAB822F1F8BA00FA8AD6 /* URLComponentsExtension.swift in Sources */,
 				2B7ABAB322F1F86D00FA8AD6 /* OfferBatchService.swift in Sources */,
 				2B7ABAC522F2203100FA8AD6 /* OfferTableViewCell.swift in Sources */,
 				2B7ABABA22F1F8BA00FA8AD6 /* URLRequestExtension.swift in Sources */,
 				2B7ABAC122F1F98100FA8AD6 /* OfferBatch.swift in Sources */,
 				2B76778922FB36110085741C /* UIImageViewExtension.swift in Sources */,
+				2B76779F22FB7BD70085741C /* ParametersEncoding.swift in Sources */,
 				2B7ABAA922F1F85300FA8AD6 /* ServiceProtocol.swift in Sources */,
 				2B7ABAA722F1F85300FA8AD6 /* ProviderProtocol.swift in Sources */,
 				2B76778C22FB45190085741C /* SortPopupOverViewController.swift in Sources */,
@@ -591,11 +617,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B7677AD22FB7C730085741C /* URLSessionProtocol.swift in Sources */,
 				2B7ABAC622F2203100FA8AD6 /* OfferTableViewCell.swift in Sources */,
+				2B7677A722FB7C540085741C /* OfferBatchService.swift in Sources */,
+				2B76779E22FB7BD50085741C /* NetworkError.swift in Sources */,
+				2B7677A222FB7BDB0085741C /* Task.swift in Sources */,
+				2B7677AB22FB7C6F0085741C /* ProviderProtocol.swift in Sources */,
+				2B7677A422FB7C130085741C /* OfferBatch.swift in Sources */,
+				2B7677A922FB7C680085741C /* URLRequestExtension.swift in Sources */,
 				2B76779422FB4FE80085741C /* SortEnum.swift in Sources */,
+				2B7677A622FB7C350085741C /* URLSessionProvider.swift in Sources */,
+				2B76779C22FB7BD20085741C /* HTTPMethod.swift in Sources */,
 				2BCAE82D22EFD4DA0079B05D /* Checkout51UITests.swift in Sources */,
+				2B7677A522FB7C270085741C /* OffersManager.swift in Sources */,
 				2B76778E22FB45290085741C /* ViewController.swift in Sources */,
+				2B7677A322FB7C100085741C /* Offer.swift in Sources */,
 				2B76778D22FB45190085741C /* SortPopupOverViewController.swift in Sources */,
+				2B7677AA22FB7C6A0085741C /* UIImageViewExtension.swift in Sources */,
+				2B7677A822FB7C650085741C /* URLComponentsExtension.swift in Sources */,
+				2B7677A022FB7BD80085741C /* ParametersEncoding.swift in Sources */,
+				2B76779A22FB7BC50085741C /* NetworkResponse.swift in Sources */,
+				2B7677AC22FB7C700085741C /* ServiceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

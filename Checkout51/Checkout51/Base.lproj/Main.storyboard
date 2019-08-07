@@ -52,12 +52,12 @@
                                             <constraints>
                                                 <constraint firstItem="Sna-Li-dqV" firstAttribute="leading" secondItem="02U-wD-yPl" secondAttribute="trailing" constant="8" id="2Wp-zG-lHe"/>
                                                 <constraint firstItem="02U-wD-yPl" firstAttribute="leading" secondItem="dYD-Gq-frf" secondAttribute="leadingMargin" constant="-15" id="9qu-BD-ZGJ"/>
+                                                <constraint firstItem="Sna-Li-dqV" firstAttribute="top" secondItem="vym-Iz-Apv" secondAttribute="bottom" constant="8" symbolic="YES" id="DfN-7c-aLL"/>
                                                 <constraint firstItem="02U-wD-yPl" firstAttribute="centerY" secondItem="dYD-Gq-frf" secondAttribute="centerY" id="ElN-I5-fWQ"/>
+                                                <constraint firstItem="vym-Iz-Apv" firstAttribute="trailing" secondItem="Sna-Li-dqV" secondAttribute="trailing" id="HMP-HQ-GeA"/>
                                                 <constraint firstAttribute="trailing" secondItem="Sna-Li-dqV" secondAttribute="trailing" constant="15" id="QJB-QY-kjC"/>
-                                                <constraint firstItem="vym-Iz-Apv" firstAttribute="trailing" secondItem="Sna-Li-dqV" secondAttribute="trailing" id="lqT-eh-xOQ"/>
                                                 <constraint firstItem="02U-wD-yPl" firstAttribute="top" secondItem="dYD-Gq-frf" secondAttribute="top" id="mBN-Em-CmG"/>
                                                 <constraint firstItem="Sna-Li-dqV" firstAttribute="top" secondItem="dYD-Gq-frf" secondAttribute="top" constant="65" id="qcY-BM-vm3"/>
-                                                <constraint firstItem="vym-Iz-Apv" firstAttribute="bottom" secondItem="dYD-Gq-frf" secondAttribute="bottomMargin" constant="-52" id="ubE-NH-vgk"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
